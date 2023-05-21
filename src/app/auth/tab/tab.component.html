@@ -1,0 +1,20 @@
+<div class="tab">
+    <ul>
+        <li>
+            <a [ngClass]="{'active': hasRoute('signup')}" href="javascript:;" [routerLink]="['/signup']" routerLinkActive="active" (click)="hasRoute('signup')">
+                Create Account
+            </a>
+        </li>
+        <li>
+            <a [ngClass]="{'active': hasRoute('login')}" href="javascript:;" [routerLink]="['/login']" routerLinkActive="active" (click)="hasRoute('login')">
+                Log In
+            </a>
+        </li>
+    </ul>
+    <div class="tab-panel" *ngIf="hasRoute('signup')">
+        <app-signup></app-signup>
+    </div>
+    <div class="tab-panel" *ngIf="hasRoute('login')">
+        <app-login></app-login>
+    </div>
+</div>

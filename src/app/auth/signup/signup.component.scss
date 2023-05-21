@@ -1,0 +1,86 @@
+@use '@angular/material' as mat;
+
+.form-wrapper {
+    .btn{
+        &.btn-primary{
+            border-radius: 15px;
+            padding: 8px 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    h4 {
+        color: #230041;
+        font-weight: 600;
+    }
+
+    p {
+        color: #746283;
+        font-weight: 500;
+    }
+
+    .social-signup {
+        color: #746283;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        padding: 15px 0;
+
+        .line-space {
+            height: 1px;
+            background: #3D2A534D;
+            flex: 1;
+        }
+    }
+
+    .social-signup-logos{
+        img{
+            height: 40px;
+        }
+        
+    }
+}
+
+::ng-deep {
+    .dense-2 {
+        @include mat.all-component-densities(-2);
+
+        mat-form-field {
+            width: 150px;
+
+            label {
+                font-size: 14px;
+            }
+        }
+
+        .mat-mdc-form-field-infix {
+            min-height: 42px;
+        }
+
+        .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+            top: 20px;
+        }
+
+        .mat-mdc-select {
+            font-size: 14px;
+        }
+
+        .mat-mdc-form-field .mdc-text-field--outlined .mdc-notched-outline--upgraded .mdc-floating-label--float-above {
+            font-size: 12px;
+        }
+
+        .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__leading{
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__trailing{
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    }
+}

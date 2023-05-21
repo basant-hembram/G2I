@@ -1,0 +1,17 @@
+
+
+<div class="form-wrapper">
+    <div class="back-nav mb-auto" (click)="goBack()">
+        <span class="material-symbols-outlined">
+            keyboard_arrow_left
+        </span>
+    </div>
+    <h4>Welcome to Global Genius Index(G2I)</h4>
+    <div class="">
+        <ngx-otp-input [config]="otpInputConfig" (fill)="handleFillEvent($event)">
+        </ngx-otp-input>
+
+        <button class="btn btn-primary w-100 mt-4">Submit</button>
+    </div>
+    <div class="mt-auto"></div>
+</div>

@@ -1,0 +1,32 @@
+$primary-color: #2E0A57;
+$btn-primary-hover-bg: #351658;
+$secondary-color: #9B78C8;
+$btn-secondary-hover-bg: #a78dc9;
+$btn-border-radius: 8px;
+
+
+header{
+    background: #fff;
+}
+
+.nav-link, .cat-dropdown{
+    font-weight: bold;
+    color: $primary-color;
+    border: 0;
+    &:focus{
+        outline: none;
+    }
+    &:active{
+        border: 0;
+    }
+}
+
+.search-box{
+    input{
+        border-radius: 20px;
+        padding-left: 40px;
+        border-color: #000;
+        background: url('../../../../assets/image/lens.png') 8px center/contain no-repeat;
+        background-size: 25px;
+    }
+}

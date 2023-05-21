@@ -1,0 +1,50 @@
+<div class="form-wrapper">
+    <h4>Welcome to Global Genius Index(G2I)</h4>
+    <p>Create your account and Discover teacher within you </p>
+    <div class="dense-2">
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Full Name</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Email</mat-label>
+            <input matInput>
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Password</mat-label>
+            <input matInput [type]="hidePass ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hidePass = !hidePass">
+                <mat-icon>{{hidePass ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Re-enter Password</mat-label>
+            <input matInput [type]="hideConPass ? 'password' : 'text'">
+            <button mat-icon-button matSuffix (click)="hideConPass = !hideConPass">
+                <mat-icon>{{hideConPass ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="w-100">
+            <mat-label>Role</mat-label>
+            <mat-select [(ngModel)]="role">
+              <mat-option value="Student">Student</mat-option>
+              <mat-option value="Teacher">Teacher</mat-option>
+              <mat-option value="Parents">Parents</mat-option>
+              <mat-option value="Investor">Investor</mat-option>
+              <mat-option value="Admin">Admin</mat-option>
+            </mat-select>
+          </mat-form-field>
+        <button class="btn btn-primary w-100 py-3">Create Account</button>
+    </div>
+    <div class="d-flex align-items-center social-signup">
+        <div class="line-space"></div>
+        <div class="px-2">Or Sign up with</div>
+        <div class="line-space"></div>
+    </div>
+
+    <div class="d-flex justify-content-between social-signup-logos">
+        <img src="../../../assets/image/google.png" class="max-h-70px" alt="" />
+        <img src="../../../assets/image/apple.png" class="max-h-70px" alt="" />
+    </div>
+</div>

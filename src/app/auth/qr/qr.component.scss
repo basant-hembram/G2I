@@ -1,0 +1,43 @@
+@use '@angular/material' as mat;
+
+.form-wrapper {
+    display: flex;
+    padding: 15px 70px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+    .back-nav {
+        border: 2px solid #320F5A;
+        align-self: flex-start;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+
+
+    h4 {
+        color: #230041;
+        font-weight: 600;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    h2 {
+        color: #230041;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    img {
+        height: 300px;
+    }
+
+}

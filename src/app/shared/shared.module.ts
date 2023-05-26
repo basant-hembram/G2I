@@ -6,6 +6,7 @@ import { MainLayoutComponent } from './app-layout/main-layout/main-layout.compon
 import { AuthLayoutComponent } from './app-layout/auth-layout/auth-layout.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CourseStepLayoutComponent } from './app-layout/course-step-layout/course-step-layout.component';
 
 
 
@@ -14,7 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
     MainLayoutComponent,
     AuthLayoutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CourseStepLayoutComponent
   ],
   imports: [
     CommonModule,

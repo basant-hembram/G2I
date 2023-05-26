@@ -12,7 +12,7 @@ const routes: Routes = [
   {
     path: "create-course-info",
     component: CreateCourseInfoComponent
-  },
+  }  
 ];
 
 @NgModule({
